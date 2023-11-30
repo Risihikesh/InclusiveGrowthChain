@@ -11,12 +11,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCQbrMQE7D7bWA_zV4hUjmsY1i0iPVC11o",
-  authDomain: "inclusiveecommerce.firebaseapp.com",
-  projectId: "inclusiveecommerce",
-  storageBucket: "inclusiveecommerce.appspot.com",
-  messagingSenderId: "809783757448",
-  appId: "1:809783757448:web:de7d376166d341f1f5ad3d"
+  apiKey: "AIzaSyD2N1TGuvOhjZHhjjfGJVc5AG2tpk2oxRo",
+  authDomain: "iclusive-4e760.firebaseapp.com",
+  projectId: "iclusive-4e760",
+  storageBucket: "iclusive-4e760.appspot.com",
+  messagingSenderId: "199857794496",
+  appId: "1:199857794496:web:4920a8bf39c999e1f5ac25"
 };
 
 
