@@ -25,6 +25,7 @@ function HomePage() {
     electronics: false,
     jewelery: false,
     womensClothing: false,
+    groceries:false,
   });
 
   const dispatch = useDispatch();

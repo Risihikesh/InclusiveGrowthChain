@@ -35,7 +35,7 @@ const FilterSidebar = ({ setCategories, setPriceRange, priceRange }) => {
               }
             />
             {/* create filter checkbox for mens cloth */}
-            <label htmlFor="mensFashion">Men's Clothing</label>
+            <label htmlFor="mensFashion">Men's Section</label>
           </div>
           <div className={styles.inputContainer}>
             <input
@@ -50,7 +50,7 @@ const FilterSidebar = ({ setCategories, setPriceRange, priceRange }) => {
               }
             />
             {/* create filter checkbox for woman cloth */}
-            <label htmlFor="womensFashion">Women's Clothing</label>
+            <label htmlFor="womensFashion">Women's Section</label>
           </div>
           <div className={styles.inputContainer}>
             <input
@@ -65,7 +65,7 @@ const FilterSidebar = ({ setCategories, setPriceRange, priceRange }) => {
               }
             />
             {/* create filter checkbox for jewelery */}
-            <label htmlFor="jewelery">Jewelery</label>
+            <label htmlFor="jewelery">Jewellery</label>
           </div>
           <div className={styles.inputContainer}>
             <input
@@ -81,6 +81,51 @@ const FilterSidebar = ({ setCategories, setPriceRange, priceRange }) => {
             />
             {/* create filter checkbox for electronics item */}
             <label htmlFor="electronics">Electronics</label>
+          </div>
+          <div className={styles.inputContainer}>
+            <input
+              type="checkbox"
+              id="groceries"
+              name="groceries"
+              onChange={(e) =>
+                setCategories((prevCategories) => ({
+                  ...prevCategories,
+                  groceries: e.target.checked,
+                }))
+              }
+            />
+            {/* create filter checkbox for groceries item */}
+            <label htmlFor="groceries">Groceries</label>
+          </div>
+          <div className={styles.inputContainer}>
+            <input
+              type="checkbox"
+              id="home"
+              name="home"
+              onChange={(e) =>
+                setCategories((prevCategories) => ({
+                  ...prevCategories,
+                  home: e.target.checked,
+                }))
+              }
+            />
+            {/* create filter checkbox for home item */}
+            <label htmlFor="home">Home</label>
+          </div>
+          <div className={styles.inputContainer}>
+            <input
+              type="checkbox"
+              id="automotive"
+              name="automotive"
+              onChange={(e) =>
+                setCategories((prevCategories) => ({
+                  ...prevCategories,
+                  automotive: e.target.checked,
+                }))
+              }
+            />
+            {/* create filter checkbox automotive item */}
+            <label htmlFor="automotive">Automotive</label>
           </div>
         </div>
       </form>

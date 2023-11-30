@@ -33,7 +33,7 @@ const productsSlice = createSlice({
       const {
         searchQuery,
         priceRange,
-        categories: { mensFashion, womensFashion, jewelery, electronics },
+        categories: { mensFashion, womensFashion, jewelery, electronics, groceries, home, automotive },
       } = action.payload;
 
       let filteredProducts = state.products;
@@ -45,18 +45,27 @@ const productsSlice = createSlice({
         });
       }
       // filter category
-      if (mensFashion || womensFashion || jewelery || electronics) {
+      if (mensFashion || womensFashion || jewelery || electronics || groceries || home || automotive) {
         filteredProducts = filteredProducts.filter((product) => {
           if (mensFashion && (product.category === "mens-shirts" || product.category === "mens-shoes" ||  product.category === "mens-watches")) {
             return true;
           }
-          if (womensFashion &&(product.category === "women's clothing" || product.category === "womens-shoes" || product.category === "womens-dresses" || product.category === "womens-watches")) {
+          if (womensFashion &&(product.category === "women's clothing" || product.category === "womens-shoes" || product.category === "womens-dresses" ||  product.category === "womens-bags")) {
             return true;
           }
           if (electronics && (product.category === "smartphones" || product.category === "laptops" || product.category === "lighting")  ) {
             return true;
           }
           if (jewelery && product.category === "womens-jewellery") {
+            return true;
+          }
+          if (groceries && product.category === "groceries") {
+            return true;
+          }
+          if (home && (product.category === "home-decoration" || product.category === "furniture")) {
+            return true;
+          }
+          if (automotive && (product.category === "automotive" || product.category === "motorcycle" )) {
             return true;
           }
           return false;
